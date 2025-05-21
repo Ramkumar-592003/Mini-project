@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart Garden Dashboard</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: linear-gradient(120deg, #f6f9fc, #dff2f1);
+      color: #333;
+      text-align: center;
+    }
+
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 40px;
+    }
+
+    .dashboard {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      padding: 25px;
+      width: 250px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+    }
+
+    .label {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .value {
+      font-size: 24px;
+      font-weight: bold;
+      color: #1e90ff;
+    }
+
+    .emoji {
+      font-size: 28px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🌿 Smart Garden Dashboard 🌿</h1>
+
+  <div class="dashboard">
+    <div class="card">
+      <div class="emoji">🌡️</div>
+      <div class="label">Temperature</div>
+      <div class="value">25 °C</div>
+    </div>
+
+    <div class="card">
+      <div class="emoji">💧</div>
+      <div class="label">Humidity</div>
+      <div class="value">60 %</div>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🌱</div>
+      <div class="label">Soil Moisture</div>
+      <div class="value">450</div>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🧪</div>
+      <div class="label">Nitrogen (N)</div>
+      <div class="value">200 ppm</div>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🧪</div>
+      <div class="label">Phosphorus (P)</div>
+      <div class="value">150 ppm</div>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🧪</div>
+      <div class="label">Potassium (K)</div>
+      <div class="value">180 ppm</div>
+    </div>
+  </div>
+
+</body>
+</html>
